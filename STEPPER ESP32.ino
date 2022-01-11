@@ -9,7 +9,7 @@
          //GND         GND
 #include <Stepper.h>
 
-const int Steps=2048; //for torque, I am using 32 steps for motor revolution, then 64 to 1 full rev, so combination of 32by64 will be 2048 matchable.
+int Steps=2048; //for torque, I am using 32 steps for motor revolution, then 64 to 1 full rev, so combination of 32by64 will be 2048 matchable.
 Stepper mystepper(Steps, 18, 12, 19, 13);//pin 1 , 3, 2, 4
 
 void setup() {
